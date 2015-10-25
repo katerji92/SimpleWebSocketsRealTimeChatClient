@@ -1,0 +1,27 @@
+<style>
+.userchat{
+	border-bottom: 1px solid grey;
+}
+</style>
+
+<div class="container">
+	<div class="row">
+		<div class="col-xs-3">
+			<a href="#/NewChat">New Chat</a>
+		</div>
+	</div>
+	<div class="row">
+		<div class="row userchat" ng-repeat="chat in allChats">
+			{{chat.user}} : {{chat.message}}
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-2">
+			<input type="text" ng-model="newChat"/> 
+		</div>
+		<div class="col-xs-1">
+			<input type="button" class="btn btn-success" value="Send" 
+			ng-click="submitNewChat()" />
+		</div>
+	</div>
+</div>

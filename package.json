@@ -1,0 +1,8 @@
+{
+	"name":"socketIOProject",
+	"dependencies" : {
+		"body-parser" : "*",
+		"express" : "*",
+		"socket.io" : "*"
+	}
+}
